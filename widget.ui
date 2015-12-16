@@ -78,7 +78,7 @@
     <string>Buscar Nino</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="buscar">
    <property name="geometry">
     <rect>
      <x>160</x>
@@ -94,14 +94,14 @@
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>400</x>
+     <x>260</x>
      <y>140</y>
      <width>80</width>
      <height>23</height>
     </rect>
    </property>
    <property name="text">
-    <string>Asignar</string>
+    <string>Crear</string>
    </property>
   </widget>
   <widget class="QWidget" name="layoutWidget">
@@ -257,28 +257,6 @@
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>260</x>
-     <y>120</y>
-     <width>131</width>
-     <height>46</height>
-    </rect>
-   </property>
-   <layout class="QVBoxLayout" name="verticalLayout_7">
-    <item>
-     <widget class="QLabel" name="label_9">
-      <property name="text">
-       <string>Asignar a </string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QComboBox" name="comboBox_2"/>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QWidget" name="layoutWidget">
-   <property name="geometry">
-    <rect>
      <x>30</x>
      <y>210</y>
      <width>127</width>
@@ -295,6 +273,39 @@
     </item>
     <item>
      <widget class="QLineEdit" name="nombre"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>110</y>
+     <width>121</width>
+     <height>77</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_8">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_7">
+      <item>
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>Asignar a </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBox_2"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="asignar">
+      <property name="text">
+       <string>asignar</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>

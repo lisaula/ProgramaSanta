@@ -1,7 +1,8 @@
 #ifndef NINO_H
 #define NINO_H
 #include<iostream>
-#include<QList>
+#include<vector>
+#include<QString>
 using namespace std;
 
 class Regalo{
@@ -28,14 +29,15 @@ public:
     string nombre;
     int index;
     int se_porto_bien; //valor del 0 al 10,  0 = Diablillo , 10 = La encarnación del Bien.
-    QList<Regalo*> Regalos;
-    int longitud;
-    int latitud;
+    vector<Regalo*> Regalos;
+    int cant_regalos;
     int edad;
-    Nino(string nombre, int edad, int cal, int index);
+    Nino(string nombre, int edad, int cal, int index, int regalos);
     Nino();
 
+    QString imprimirRegalos();
     void addRegalo(string descr, char C_Prtal);
+    void addList(vector<Regalo *> list, int cant);
     void changeCarbon();
 };
 

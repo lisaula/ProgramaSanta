@@ -18,15 +18,25 @@ class Widget : public QWidget
 
 public:
     int hashCode(string text);
+    int fibonacci(int n );
     explicit Widget(QWidget *parent = 0);
     void insertar();
+    void borrarcorrido(int n, Nino* &nino);
+    int checkGifts(Nino* & nino);
     ~Widget();
 
 private slots:
     void on_AddButton_clicked();
 
+    void on_pushButton_2_clicked();
+
+    void on_asignar_clicked();
+
+    void on_buscar_clicked();
+
 private:
     Btree<Nino,3>tree;
+    vector<Regalo*>lista;
     Ui::Widget *ui;
 };
 
