@@ -1,0 +1,1 @@
+Se logro mejorar la eficiencia cambia el metodo de busqueda secuencial, por un metodo de busqueda mas optimo. Asi evitamos gastar tiempo en las iteraciones de busqueda.
